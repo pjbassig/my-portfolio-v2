@@ -7,14 +7,52 @@
   --color-muted: #8B94A3;
   --color-accent: #5EEAD4;
   --color-accent-warm: #F2B84B;
+  --color-border: rgba(255, 255, 255, 0.06);
 
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
+/* Light mode overrides — applied when .light class is on <html> */
+.light {
+  --color-bg: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-text: #12151A;
+  --color-muted: #5B6472;
+  --color-accent: #0F9C8F;
+  --color-accent-warm: #C98A1F;
+  --color-border: rgba(0, 0, 0, 0.08);
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.glow-bg {
+  position: relative;
+}
+.glow-bg::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(94,234,212,0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }

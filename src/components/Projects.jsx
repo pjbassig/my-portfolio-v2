@@ -28,7 +28,7 @@ export default function Projects() {
                 ))}
               </div>
               <div className="flex gap-4 text-sm">
-                <a href={p.liveUrl} className="text-accent hover:underline">More details</a>
+                <a href={p.liveUrl} target="_blank" rel="noopener" className="text-accent hover:underline">More details</a>
               </div>
             </div>
           </div>

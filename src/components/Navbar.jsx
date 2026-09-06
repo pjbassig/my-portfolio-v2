@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle"
+
 export default function Navbar() {
   const links = ["About", "Skills", "Projects", "Contact"];
 
@@ -16,6 +18,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <ThemeToggle />
       </nav>
     </header>
   );
