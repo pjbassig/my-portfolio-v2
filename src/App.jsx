@@ -9,6 +9,7 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import { Contact, Footer } from "./components/Contact"
 import ThemeToggle from "./components/ThemeToggle"
+import ScrollToTop from "./components/ScrollToTop"
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Projects />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
