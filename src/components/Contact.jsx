@@ -5,7 +5,7 @@ export function Contact() {
       <p className="text-muted mb-8 max-w-md">
         Open to new roles and interesting projects. Reach out directly.
       </p>
-      <a href="mailto:ypauljoshuagbassig@gmail.com" className="text-accent text-xl font-mono hover:underline">
+      <a href="mailto:pauljoshuagbassig@gmail.com" className="text-accent text-xl font-mono hover:underline">
         pauljoshuagbassig@gmail.com
       </a>
     </section>
