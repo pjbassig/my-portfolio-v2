@@ -10,6 +10,7 @@ import Projects from "./components/Projects"
 import { Contact, Footer } from "./components/Contact"
 import ThemeToggle from "./components/ThemeToggle"
 import ScrollToTop from "./components/ScrollToTop"
+import About from "./components/About"
 
 export default function App() {
   return (

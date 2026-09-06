@@ -1,23 +1,28 @@
 import { motion } from "framer-motion";
 import Carousel from "./Carousel";
 
+
 const eventPhotos = [
   "/images/event/event1.jpg",
   "/images/event/event2.jpg",
   "/images/event/event3.jpg",
+  "/images/event/event4.jpg",
+  "/images/event/event5.jpg",
+  "/images/event/event6.jpg",
+  "/images/event/event7.jpg"
 ];
 
 export default function Hero() {
   return (
+    
     <section className="relative overflow-hidden">
-      {/* Background carousel */}
       <div className="absolute inset-0 z-0">
         <Carousel images={eventPhotos} />
         <div className="absolute inset-0 bg-bg/85" />
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-2 gap-12 items-center">
+      <div id = "about" className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
