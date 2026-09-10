@@ -14,7 +14,7 @@ const skillGroups = [
   },
   {
     category: "Programming",
-    items: ["JavaScript", "VB.NET", "HTML", "CSS", "Python"],
+    items: ["HTML", "CSS", "JavaScript", "VB.NET", "Python"],
   },
   {
     category: "Database",

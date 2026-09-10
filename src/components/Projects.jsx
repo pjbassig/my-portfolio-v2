@@ -15,7 +15,8 @@ export default function Projects() {
             <img
               src={p.image}
               alt={p.title}
-              className="rounded-lg border border-white/5 w-full aspect-video object-cover"
+              loading="lazy"
+              className="w-full aspect-video object-cover transition-transform duration-500 hover:scale-105"
             />
             <div>
               <h3 className="font-heading text-xl font-semibold mb-3">{p.title}</h3>

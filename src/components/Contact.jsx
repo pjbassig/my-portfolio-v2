@@ -14,12 +14,12 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="max-w-5xl mx-auto px-6 py-10 text-muted text-sm flex justify-between border-t border-white/5">
-      <span>© {new Date().getFullYear()} Paul</span>
+    <footer className="max-w-5xl mx-auto px-6 py-10 flex flex-col items-center gap-4 border-t border-border">
       <div className="flex gap-4">
         <a href="https://github.com/pjbassig" target="_blank" rel="noopener" className="hover:text-text">GitHub</a>
         <a href="https://www.linkedin.com/in/paul-joshua-bassig-47a5ab1b9/" target="_blank" rel="noopener" className="hover:text-text">LinkedIn</a>
       </div>
+      <span className="text-muted text-sm">Built by Paul Joshua G. Bassig</span>
     </footer>
   );
 }

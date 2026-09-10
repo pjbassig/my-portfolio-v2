@@ -9,7 +9,9 @@ const eventPhotos = [
   "/images/event/event4.jpg",
   "/images/event/event5.jpg",
   "/images/event/event6.jpg",
-  "/images/event/event7.jpg"
+  "/images/event/event7.jpg",
+  "/images/event/event8.jpg",
+  "/images/event/event9.jpg",
 ];
 
 export default function Hero() {
@@ -22,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Foreground content */}
-      <div id = "about" className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
